@@ -2,6 +2,7 @@
   "name": "loggitack/loggitrack-sdk-laravel",
   "description": "LoggiTrack integration SDK for Laravel",
   "type": "library",
+  "license": ["MIT"],
   "require": {
     "php": "^7.4|^8.2",
     "guzzlehttp/guzzle": "^7.2"
