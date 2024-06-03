@@ -3,6 +3,12 @@
   "description": "LoggiTrack integration SDK for Laravel",
   "type": "library",
   "license": ["MIT"],
+  "authors": [
+    {
+      "name": "Manfouo Thierno",
+      "email": "support@loggitrack.com"
+    }
+  ],
   "require": {
     "php": "^7.4|^8.2",
     "guzzlehttp/guzzle": "^7.2"
@@ -24,5 +30,7 @@
         "LoggiTrack": "LoggiTrack\\LoggiTrackSDKLaravel\\Facades\\LoggiTrack"
       }
     }
-  }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
 }
