@@ -39,6 +39,12 @@ The Loggitrack Laravel SDK provides seamless integration of the Loggitrack API i
        ],
        // Additional configuration options
        'queueable' => false,
+        /**
+        * the request logger and model logger will not save these fields.
+        */
+        'escaped_fields' => [
+        // 'password', 'api_key'
+        ]
    ];
    ```
 
