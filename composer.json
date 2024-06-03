@@ -1,0 +1,27 @@
+{
+  "name": "logitack/logitrack-sdk-laravel",
+  "description": "LogiTrack integration SDK for Laravel",
+  "type": "library",
+  "require": {
+    "php": "^7.4|^8.2",
+    "guzzlehttp/guzzle": "^7.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "LogiTrack\\LogiTrackSDKLaravel\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "LogiTrack\\LogiTrackSDKLaravel\\LogitrackServiceProvider"
+      ],
+      "aliases": {
+        "LogiTrack": "LogiTrack\\LogiTrackSDKLaravel\\Facades\\LogiTrack"
+      }
+    }
+  }
+}
