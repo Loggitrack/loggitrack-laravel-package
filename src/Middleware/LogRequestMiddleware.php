@@ -5,7 +5,7 @@ namespace LoggiTrack\LoggiTrackSDKLaravel\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
-use LogiTrack\LogiTrackSDKLaravel\Helpers\SaveLogs;
+use LoggiTrack\LoggiTrackSDKLaravel\Helpers\SaveLogs;
 use Symfony\Component\HttpFoundation\Response;
 class LogRequestMiddleware
 {
@@ -25,6 +25,9 @@ class LogRequestMiddleware
     public function terminate(Request $request, Response $response)
     {
         $responseTime = (microtime(true) * 1000) - $request->start_time;
+
+        dd('escaped',config('loggitrack.escaped_fields'));
+
         $requestData = [
             "timestamp" => now()->toDateTimeString(), // Get current timestamp
             "method" => request()->getMethod(),

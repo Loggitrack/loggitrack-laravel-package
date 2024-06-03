@@ -1,11 +1,11 @@
 <?php
 
-namespace LogiTrack\LogiTrackSDKLaravel\Observers;
+namespace LoggiTrack\LoggiTrackSDKLaravel\Observers;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Request;
-use LogiTrack\LogiTrackSDKLaravel\Helpers\SaveLogs;
+use LoggiTrack\LoggiTrackSDKLaravel\Helpers\SaveLogs;
 
 class ModelObserver
 {
@@ -21,7 +21,7 @@ class ModelObserver
         $logPayload  = [
             'type' => 'create',
             'model' => get_class($model),
-            'entityData' => $entityData,
+            'entityData' => SaveLogs::removeEscapedFields((array)$entityData, config('loggitrack.escaped_fields')),
             'performedBy' => $userData,
             'performedAt' => now()->toDateTimeString(), // Log the time of the event
         ];
@@ -73,10 +73,10 @@ class ModelObserver
             'type' => 'create',
             'model' => get_class($model),
             'entityData' => [
-                'original' => $originalData,
-                'updated_data' => $dirtyData
+                'original' =>  SaveLogs::removeEscapedFields((array)$originalData, config('loggitrack.escaped_fields')),
+                'updated_data' =>  SaveLogs::removeEscapedFields((array)$dirtyData, config('loggitrack.escaped_fields')),
             ],
-            'performedBy' => $userData,
+            'performedBy' => $currentUser->id,
             'performedAt' => now()->toDateTimeString(), // Log the time of the event
         ];
 

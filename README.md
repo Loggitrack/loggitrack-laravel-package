@@ -46,7 +46,7 @@ The Loggitrack Laravel SDK provides seamless integration of the Loggitrack API i
 
    ```
    LOGITRACK_API_KEY=your-api-key
-   LOGITRACK_API_URL=http://127.0.0.1:3080
+   LOGITRACK_API_URL=http://127.0.0.1:3020
    ```
 
 ## Usage
