@@ -5,7 +5,7 @@ namespace LogiTrack\LogiTrackSDKLaravel;
 use Illuminate\Support\ServiceProvider;
 use LogiTrack\LogiTrackSDKLaravel\Observers\ModelObserver;
 
-class LogitrackServiceProvider extends ServiceProvider
+class LoggitrackServiceProvider extends ServiceProvider
 {
     public function boot()
     {
