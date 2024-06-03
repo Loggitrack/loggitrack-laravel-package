@@ -26,7 +26,7 @@ class ModelObserver
             'performedAt' => now()->toDateTimeString(), // Log the time of the event
         ];
 
-        if(config('logitrack.queueable')){
+        if(config('loggitrack.queueable')){
             // dispatch job to save logs
         }else{
             SaveLogs::logModelUpdateEvent($logPayload);
@@ -80,7 +80,7 @@ class ModelObserver
             'performedAt' => now()->toDateTimeString(), // Log the time of the event
         ];
 
-        if(config('logitrack.queueable')){
+        if(config('loggitrack.queueable')){
             // dispatch job to save logs
 
         }else{

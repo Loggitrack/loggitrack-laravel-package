@@ -8,14 +8,14 @@ class SaveLogs
 {
 
     public static function logModelUpdateEvent($logPayload) {
-        $loggingServiceEndpoint = config('logitrack.api_url').'/model-change';
+        $loggingServiceEndpoint = config('loggitrack.api_url').'/model-change';
         try {
             // Asynchronously sending the payload to the event logging service.
             // Timeout and retry options enhance the service's performance.
             $response = Http
 //                ->retry(3, 100) // Retry 3 times with 100ms intervals if it fails.
                 ::withHeaders([
-                    'api_key' => config('logitrack.api_key')
+                    'api_key' => config('loggitrack.api_key')
                 ])->post($loggingServiceEndpoint, $logPayload);
 
             // Considerations: Do you want to monitor the status, log if it fails, or more?
@@ -30,14 +30,14 @@ class SaveLogs
     }
 
     public static function logRequestEvent($logPayload) {
-        $loggingServiceEndpoint = config('logitrack.api_url').'/request-log';
+        $loggingServiceEndpoint = config('loggitrack.api_url').'/request-log';
         try {
             // Asynchronously sending the payload to the event logging service.
             // Timeout and retry options enhance the service's performance.
             $response = Http
 //                ->retry(3, 100) // Retry 3 times with 100ms intervals if it fails.
                 ::withHeaders([
-                    'api_key' => config('logitrack.api_key')
+                    'api_key' => config('loggitrack.api_key')
                 ])->post($loggingServiceEndpoint, $logPayload);
 
             // Considerations: Do you want to monitor the status, log if it fails, or more?

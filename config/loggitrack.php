@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'api_key' => env('LOGITRACK_API_KEY', ''),
-    'api_url' => env('LOGITRACK_API_URL', ''),
+    'api_key' => env('LOGGITRACK_API_KEY', ''),
+    'api_url' => env('LOGGITRACK_API_URL', 'http://127.0.0.1:3020'),
     'observed_models' => [
         // Example: App\Models\User::class,
     ],

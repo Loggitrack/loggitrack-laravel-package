@@ -17,7 +17,7 @@ The Loggitrack Laravel SDK provides seamless integration of the Loggitrack API i
 
 1. Require the SDK via Composer:
    ```bash
-   composer require yourusername/loggitrack-laravel-sdk
+   composer require loggitack/loggitrack-sdk-laravel
    ```
 
 2. Publish the configuration file:
@@ -32,8 +32,8 @@ The Loggitrack Laravel SDK provides seamless integration of the Loggitrack API i
    <?php
 
    return [
-       'api_key' => env('LOGITRACK_API_KEY', ''),
-       'api_url' => env('LOGITRACK_API_URL', ''),
+       'api_key' => env('LOGGITRACK_API_KEY', ''),
+       'api_url' => env('LOGGITRACK_API_URL', ''),
        'observed_models' => [
            // Example: App\Models\User::class,
        ],
@@ -42,11 +42,11 @@ The Loggitrack Laravel SDK provides seamless integration of the Loggitrack API i
    ];
    ```
 
-   Set the `LOGITRACK_API_KEY` and `LOGITRACK_API_URL` environment variables in your `.env` file:
+   Set the `LOGGITRACK_API_KEY` and `LOGGITRACK_API_URL` environment variables in your `.env` file:
 
    ```
-   LOGITRACK_API_KEY=your-api-key
-   LOGITRACK_API_URL=http://127.0.0.1:3020
+   LOGGITRACK_API_KEY=your-api-key
+   LOGGITRACK_API_URL=http://127.0.0.1:3020
    ```
 
 ## Usage
