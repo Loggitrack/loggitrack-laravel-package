@@ -1,6 +1,6 @@
 <?php
 
-namespace LogiTrack\LogiTrackSDKLaravel\Middleware;
+namespace LoggiTrack\LoggiTrackSDKLaravel\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;

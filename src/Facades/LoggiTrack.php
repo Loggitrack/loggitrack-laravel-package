@@ -1,6 +1,6 @@
 <?php
 
-namespace LogiTrack\LogiTrackSDKLaravel\Facades;
+namespace LoggiTrack\LoggiTrackSDKLaravel\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

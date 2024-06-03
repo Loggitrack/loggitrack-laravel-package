@@ -1,9 +1,9 @@
 <?php
 
-namespace LogiTrack\LogiTrackSDKLaravel;
+namespace LoggiTrack\LoggiTrackSDKLaravel;
 
 use Illuminate\Support\ServiceProvider;
-use LogiTrack\LogiTrackSDKLaravel\Observers\ModelObserver;
+use LoggiTrack\LoggiTrackSDKLaravel\Observers\ModelObserver;
 
 class LoggitrackServiceProvider extends ServiceProvider
 {
@@ -18,7 +18,7 @@ class LoggitrackServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->singleton('loggitrack', function ($app) {
-            return new LogiTrackService();
+            return new LoggiTrackService();
         });
     }
 

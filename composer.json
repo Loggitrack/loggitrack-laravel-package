@@ -11,7 +11,7 @@
   },
   "autoload": {
     "psr-4": {
-      "LogiTrack\\LogiTrackSDKLaravel\\": "src/"
+      "LoggiTrack\\LoggiTrackSDKLaravel\\": "src/"
     }
   },
   "extra": {
@@ -20,7 +20,7 @@
         "LoggiTrack\\LoggiTrackSDKLaravel\\LoggitrackServiceProvider"
       ],
       "aliases": {
-        "LogiTrack": "LoggiTrack\\LoggiTrackSDKLaravel\\Facades\\LoggiTrack"
+        "LoggiTrack": "LoggiTrack\\LoggiTrackSDKLaravel\\Facades\\LoggiTrack"
       }
     }
   }

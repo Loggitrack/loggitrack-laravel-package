@@ -1,6 +1,6 @@
 <?php
 
-namespace LogiTrack\LogiTrackSDKLaravel\Helpers;
+namespace LoggiTrack\LoggiTrackSDKLaravel\Helpers;
 
 use Illuminate\Support\Facades\Http;
 
