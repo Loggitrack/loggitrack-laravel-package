@@ -1,8 +1,8 @@
 
 # Loggitrack Laravel SDK
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/yourusername/loggitrack-laravel-sdk.svg?style=flat-square)](https://packagist.org/packages/yourusername/loggitrack-laravel-sdk)
-[![Total Downloads](https://img.shields.io/packagist/dt/yourusername/loggitrack-laravel-sdk.svg?style=flat-square)](https://packagist.org/packages/yourusername/loggitrack-laravel-sdk)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/loggitrack/loggitrack-laravel-sdk.svg?style=flat-square)](https://packagist.org/packages/loggitrack/loggitrack-laravel-sdk)
+[![Total Downloads](https://img.shields.io/packagist/dt/loggitrack/loggitrack-laravel-sdk.svg?style=flat-square)](https://packagist.org/packages/loggitrack/loggitrack-laravel-sdk)
 
 The Loggitrack Laravel SDK provides seamless integration of the Loggitrack API into your Laravel application, allowing you to track API requests and responses, analyze performance metrics, and monitor user behavior.
 
@@ -10,7 +10,7 @@ The Loggitrack Laravel SDK provides seamless integration of the Loggitrack API i
 
 ### Prerequisites
 
-- PHP ^7.4|^8.0
+- PHP ^8.2
 - Laravel ^8.0|^9.0|^10.0
 
 ### Installation Steps
