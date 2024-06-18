@@ -26,8 +26,6 @@ class LogRequestMiddleware
     {
         $responseTime = (microtime(true) * 1000) - $request->start_time;
 
-        dd('escaped',config('loggitrack.escaped_fields'));
-
         $requestData = [
             "timestamp" => now()->toDateTimeString(), // Get current timestamp
             "method" => request()->getMethod(),
